@@ -8,4 +8,5 @@
 
 ## Steps
 * run "npm install --save-dev @babel/core" to get necessary babel files
+* run "npm install eslint babel-eslint --save-dev" to get babel-eslint parser
 * run "browserify b2e_converter.js -o build/b2e_converter.js -d" to bundle our converter

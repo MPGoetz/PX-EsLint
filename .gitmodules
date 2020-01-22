@@ -1,3 +1,0 @@
-[submodule "babel-eslint"]
-	path = babel-eslint
-	url = https://github.com/babel/babel-eslint.git

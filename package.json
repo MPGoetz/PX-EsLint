@@ -1,0 +1,8 @@
+{
+  "name": "PX-EsLint",
+  "version": "1.0.0",
+  "dependencies": {
+    "babel-eslint": "latest",
+    "@babel/core": "latest"
+  }
+}
