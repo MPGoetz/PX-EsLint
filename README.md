@@ -3,6 +3,7 @@
 ## TODOs
 * gucken ob wir require auflösen können (browserifien würde das ganze auflösen, aber dann hätten wir es nicht mehr
  als eigene Datei)
+* sourceType= module vielleicht ändern
 
 ## Setup
 The Babylon-To-Espree-Converter depends on Babel and Babel-eslint. Therefore, run the following command:
@@ -27,5 +28,5 @@ to
 ## Bundle the Converter
 The Bundle will be located in the build-folder. Run:
 ```
-browserify b2e_converter.js -o build/b2e_converter.js -d
+browserify b2e_converter.js -o build/b2e_converter.js --standalone babelToEspree
 ```
