@@ -26,7 +26,10 @@ to
 ```
 
 ## Bundle the Converter
-The Bundle will be located in the build-folder. Run:
+The bundle will be located in the build-folder. With `--standalone` it generates a UMD bundle with a given export name.
+This bundle works with other module systems and sets the name given as a window global.
+This way we can load the bundle as a global variable in the code-mirror later.
+Run:
 ```
 browserify b2e_converter.js -o build/b2e_converter.js --standalone babelToEspree
 ```
