@@ -1,12 +1,7 @@
-# PX-EsLint
-
-## TODOs
-* gucken ob wir require auflösen können (browserifien würde das ganze auflösen, aber dann hätten wir es nicht mehr
- als eigene Datei)
-* sourceType= module vielleicht ändern
+# [PX19/20] EsLint extension
 
 ## Setup
-The Babylon-To-Espree-Converter depends on Babel and Babel-eslint. Therefore, run the following command:
+The Babylon-To-Espree-Converter depends on Babel and Babel-eslint. Therefore, run the following command before running the code:
 ```
     npm install
 ```
@@ -25,11 +20,16 @@ to
     ast.range[1] = ast.body[0].end;
 ```
 
+## Run the Converter
+In `test_parser.js` is an implementation of the `b2e_converter.js` given. You can run this file to test the converter.
+
+
 ## Bundle the Converter
-The bundle will be located in the build-folder. With `--standalone` it generates a UMD bundle with a given export name.
+The code is bundled with `browserify` and will be located in the build-folder. With `--standalone` it generates a UMD bundle with a given export name.
 This bundle works with other module systems and sets the name given as a window global.
 This way we can load the bundle as a global variable in the code-mirror later.
-Run:
+
+To bundle `b2e_converter`, run the following command. The name of the global variable of the bundle is `babelToEspree`.
 ```
-browserify b2e_converter.js -o build/b2e_converter.js --standalone babelToEspree
+npm run bundle
 ```

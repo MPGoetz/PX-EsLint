@@ -1,3 +1,11 @@
+/**
+var a = 3;
+function plus(x){
+    return this + x;
+}//a::plus(4);
+//here is a comment
+ */
+
 module.exports = {
     "type": "File",
     "start": 0,
