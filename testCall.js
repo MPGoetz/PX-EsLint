@@ -5,4 +5,4 @@ const ast = require('./astSource');
 
 let newAST = parse("var a = 3;", {});
 newAST = b2e_converter("var a = 3;", ast)
-console.log(newAST);
+console.log(JSON.stringify(newAST));
