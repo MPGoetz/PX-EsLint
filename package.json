@@ -6,6 +6,6 @@
     "@babel/core": "latest"
   },
   "scripts": {
-    "bundle": "browserify b2e_converter.js -o build/b2e_converter_newTry.js --standalone babelToEspree"
+    "bundle": "browserify babelParser.js -o build/babelParser_bundle.js --standalone babelParser"
   }
 }

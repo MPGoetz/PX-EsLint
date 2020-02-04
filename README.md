@@ -21,7 +21,7 @@ to
 ```
 
 ## Run the Converter
-In `test_parser.js` is an implementation of the `b2e_converter.js` given. You can run this file to test the converter.
+In `testParser.js` is an implementation of the `babelParser.js` given. You can run this file to test the converter.
 
 
 ## Bundle the Converter
@@ -29,7 +29,7 @@ The code is bundled with `browserify` and will be located in the build-folder. W
 This bundle works with other module systems and sets the name given as a window global.
 This way we can load the bundle as a global variable in the code-mirror later.
 
-To bundle `b2e_converter`, run the following command. The name of the global variable of the bundle is `babelToEspree`.
+To bundle `babelParser.js`, run the following command. The name of the global variable of the bundle is `babelParser`.
 ```
 npm run bundle
 ```
