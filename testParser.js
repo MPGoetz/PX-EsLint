@@ -1,6 +1,7 @@
 const b2e_converter = require('./babelParser');
-const parse = require('babel-eslint/lib/parse')
 const ast = require('./astSource');
+const converter = require('./convertNodes');
 
-let newAST = b2e_converter("var a = { b:3, c:4};", {ecmaFeatures: { jsx: true }})
+//let convertedAST = converter(ast);
+let newAST = b2e_converter("var", ast);
 console.log(JSON.stringify(newAST));

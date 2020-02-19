@@ -9,15 +9,28 @@ The Babylon-To-Espree-Converter depends on Babel and Babel-eslint. Therefore, ru
 For Babel-eslint, `babel/core@>=7.2.0` is required. In Lively4, an older version is currently used (probably `6.26.3`).
 In this version you cannot specify the `range` in the parser options. 
 Therefore, we need to add it in the Babel-eslint plugin manually.
-In the file `babel-eslint/lib/babel-to-espree/attachComments.js`, change the following line 57:
+In the file `babel-eslint/lib/babel-to-espree/toAST.js`, starting from line 25,
+```js
+        var astTransformVisitor = {
+          noScope: true,
+          enter(path) {
+            var node = path.node;
+        
+            // private var to track original node type
+            node._babelType = node.type;
 ```
-    ast.range[0] = ast.body[0].start;
-```
-to
-```
-    ast.range = new Array(2);
-    ast.range[0] = ast.body[0].start;
-    ast.range[1] = ast.body[0].end;
+add the following lines:
+```js
+    var astTransformVisitor = {
+      noScope: true,
+      enter(path) {
+        var node = path.node;
+    
+        // private var to track original node type
+        node._babelType = node.type;
+        if (node.end) {
+          node.range = [node.start, node.end];
+        }
 ```
 
 ## Run the Converter
