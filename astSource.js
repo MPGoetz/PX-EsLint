@@ -1,37 +1,38 @@
 /**
- var object = {
-  get k() {return 3},
-  foo: "bar",
-  fizz: "buzz"
-}
+ const a = {
+  b: {c: true},
+  d() {return 4},
+  get e() {return 6},
+  f: true
+};
  */
 
 module.exports = {
     "type": "File",
     "start": 0,
-    "end": 63,
+    "end": 80,
     "loc": {
         "start": {
             "line": 1,
             "column": 0
         },
         "end": {
-            "line": 5,
-            "column": 1
+            "line": 6,
+            "column": 2
         }
     },
     "program": {
         "type": "Program",
         "start": 0,
-        "end": 63,
+        "end": 80,
         "loc": {
             "start": {
                 "line": 1,
                 "column": 0
             },
             "end": {
-                "line": 5,
-                "column": 1
+                "line": 6,
+                "column": 2
             }
         },
         "sourceType": "module",
@@ -39,68 +40,68 @@ module.exports = {
             {
                 "type": "VariableDeclaration",
                 "start": 0,
-                "end": 63,
+                "end": 80,
                 "loc": {
                     "start": {
                         "line": 1,
                         "column": 0
                     },
                     "end": {
-                        "line": 5,
-                        "column": 1
+                        "line": 6,
+                        "column": 2
                     }
                 },
                 "declarations": [
                     {
                         "type": "VariableDeclarator",
-                        "start": 4,
-                        "end": 63,
+                        "start": 6,
+                        "end": 79,
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 4
+                                "column": 6
                             },
                             "end": {
-                                "line": 5,
+                                "line": 6,
                                 "column": 1
                             }
                         },
                         "id": {
                             "type": "Identifier",
-                            "start": 4,
-                            "end": 10,
+                            "start": 6,
+                            "end": 7,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 4
+                                    "column": 6
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 10
+                                    "column": 7
                                 },
-                                "identifierName": "object"
+                                "identifierName": "a"
                             },
-                            "name": "object"
+                            "name": "a"
                         },
                         "init": {
                             "type": "ObjectExpression",
-                            "start": 13,
-                            "end": 63,
+                            "start": 10,
+                            "end": 79,
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 13
+                                    "column": 10
                                 },
                                 "end": {
-                                    "line": 5,
+                                    "line": 6,
                                     "column": 1
                                 }
                             },
                             "properties": [
                                 {
                                     "type": "ObjectProperty",
-                                    "start": 17,
-                                    "end": 31,
+                                    "start": 14,
+                                    "end": 26,
                                     "loc": {
                                         "start": {
                                             "line": 2,
@@ -108,7 +109,7 @@ module.exports = {
                                         },
                                         "end": {
                                             "line": 2,
-                                            "column": 16
+                                            "column": 14
                                         }
                                     },
                                     "method": false,
@@ -116,8 +117,8 @@ module.exports = {
                                     "computed": false,
                                     "key": {
                                         "type": "Identifier",
-                                        "start": 17,
-                                        "end": 18,
+                                        "start": 14,
+                                        "end": 15,
                                         "loc": {
                                             "start": {
                                                 "line": 2,
@@ -127,14 +128,14 @@ module.exports = {
                                                 "line": 2,
                                                 "column": 3
                                             },
-                                            "identifierName": "a"
+                                            "identifierName": "b"
                                         },
-                                        "name": "a"
+                                        "name": "b"
                                     },
                                     "value": {
                                         "type": "ObjectExpression",
-                                        "start": 20,
-                                        "end": 31,
+                                        "start": 17,
+                                        "end": 26,
                                         "loc": {
                                             "start": {
                                                 "line": 2,
@@ -142,22 +143,22 @@ module.exports = {
                                             },
                                             "end": {
                                                 "line": 2,
-                                                "column": 16
+                                                "column": 14
                                             }
                                         },
                                         "properties": [
                                             {
                                                 "type": "ObjectProperty",
-                                                "start": 22,
-                                                "end": 29,
+                                                "start": 18,
+                                                "end": 25,
                                                 "loc": {
                                                     "start": {
                                                         "line": 2,
-                                                        "column": 7
+                                                        "column": 6
                                                     },
                                                     "end": {
                                                         "line": 2,
-                                                        "column": 14
+                                                        "column": 13
                                                     }
                                                 },
                                                 "method": false,
@@ -165,33 +166,33 @@ module.exports = {
                                                 "computed": false,
                                                 "key": {
                                                     "type": "Identifier",
-                                                    "start": 22,
-                                                    "end": 23,
+                                                    "start": 18,
+                                                    "end": 19,
                                                     "loc": {
                                                         "start": {
+                                                            "line": 2,
+                                                            "column": 6
+                                                        },
+                                                        "end": {
                                                             "line": 2,
                                                             "column": 7
                                                         },
-                                                        "end": {
-                                                            "line": 2,
-                                                            "column": 8
-                                                        },
-                                                        "identifierName": "a"
+                                                        "identifierName": "c"
                                                     },
-                                                    "name": "a"
+                                                    "name": "c"
                                                 },
                                                 "value": {
                                                     "type": "BooleanLiteral",
-                                                    "start": 25,
-                                                    "end": 29,
+                                                    "start": 21,
+                                                    "end": 25,
                                                     "loc": {
                                                         "start": {
                                                             "line": 2,
-                                                            "column": 10
+                                                            "column": 9
                                                         },
                                                         "end": {
                                                             "line": 2,
-                                                            "column": 14
+                                                            "column": 13
                                                         }
                                                     },
                                                     "value": true
@@ -201,9 +202,9 @@ module.exports = {
                                     }
                                 },
                                 {
-                                    "type": "ObjectProperty",
-                                    "start": 35,
-                                    "end": 45,
+                                    "type": "ObjectMethod",
+                                    "start": 30,
+                                    "end": 44,
                                     "loc": {
                                         "start": {
                                             "line": 3,
@@ -211,16 +212,16 @@ module.exports = {
                                         },
                                         "end": {
                                             "line": 3,
-                                            "column": 12
+                                            "column": 16
                                         }
                                     },
-                                    "method": false,
+                                    "method": true,
                                     "shorthand": false,
                                     "computed": false,
                                     "key": {
                                         "type": "Identifier",
-                                        "start": 35,
-                                        "end": 38,
+                                        "start": 30,
+                                        "end": 31,
                                         "loc": {
                                             "start": {
                                                 "line": 3,
@@ -228,37 +229,76 @@ module.exports = {
                                             },
                                             "end": {
                                                 "line": 3,
-                                                "column": 5
+                                                "column": 3
                                             },
-                                            "identifierName": "foo"
+                                            "identifierName": "d"
                                         },
-                                        "name": "foo"
+                                        "name": "d"
                                     },
-                                    "value": {
-                                        "type": "StringLiteral",
-                                        "start": 40,
-                                        "end": 45,
+                                    "kind": "method",
+                                    "id": null,
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false,
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "start": 34,
+                                        "end": 44,
                                         "loc": {
                                             "start": {
                                                 "line": 3,
-                                                "column": 7
+                                                "column": 6
                                             },
                                             "end": {
                                                 "line": 3,
-                                                "column": 12
+                                                "column": 16
                                             }
                                         },
-                                        "extra": {
-                                            "rawValue": "bar",
-                                            "raw": "\"bar\""
-                                        },
-                                        "value": "bar"
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "start": 35,
+                                                "end": 43,
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 3,
+                                                        "column": 7
+                                                    },
+                                                    "end": {
+                                                        "line": 3,
+                                                        "column": 15
+                                                    }
+                                                },
+                                                "argument": {
+                                                    "type": "NumericLiteral",
+                                                    "start": 42,
+                                                    "end": 43,
+                                                    "loc": {
+                                                        "start": {
+                                                            "line": 3,
+                                                            "column": 14
+                                                        },
+                                                        "end": {
+                                                            "line": 3,
+                                                            "column": 15
+                                                        }
+                                                    },
+                                                    "extra": {
+                                                        "rawValue": 4,
+                                                        "raw": "4"
+                                                    },
+                                                    "value": 4
+                                                }
+                                            }
+                                        ],
+                                        "directives": []
                                     }
                                 },
                                 {
-                                    "type": "ObjectProperty",
-                                    "start": 49,
-                                    "end": 61,
+                                    "type": "ObjectMethod",
+                                    "start": 48,
+                                    "end": 66,
                                     "loc": {
                                         "start": {
                                             "line": 4,
@@ -266,7 +306,7 @@ module.exports = {
                                         },
                                         "end": {
                                             "line": 4,
-                                            "column": 14
+                                            "column": 20
                                         }
                                     },
                                     "method": false,
@@ -274,47 +314,139 @@ module.exports = {
                                     "computed": false,
                                     "key": {
                                         "type": "Identifier",
-                                        "start": 49,
+                                        "start": 52,
                                         "end": 53,
                                         "loc": {
                                             "start": {
                                                 "line": 4,
-                                                "column": 2
+                                                "column": 6
                                             },
                                             "end": {
                                                 "line": 4,
-                                                "column": 6
+                                                "column": 7
                                             },
-                                            "identifierName": "fizz"
+                                            "identifierName": "e"
                                         },
-                                        "name": "fizz"
+                                        "name": "e"
                                     },
-                                    "value": {
-                                        "type": "StringLiteral",
-                                        "start": 55,
-                                        "end": 61,
+                                    "kind": "get",
+                                    "variance": null,
+                                    "variancePos": 52,
+                                    "id": null,
+                                    "generator": false,
+                                    "expression": false,
+                                    "async": false,
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "start": 56,
+                                        "end": 66,
                                         "loc": {
                                             "start": {
                                                 "line": 4,
-                                                "column": 8
+                                                "column": 10
                                             },
                                             "end": {
                                                 "line": 4,
-                                                "column": 14
+                                                "column": 20
                                             }
                                         },
-                                        "extra": {
-                                            "rawValue": "buzz",
-                                            "raw": "\"buzz\""
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "start": 57,
+                                                "end": 65,
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 4,
+                                                        "column": 11
+                                                    },
+                                                    "end": {
+                                                        "line": 4,
+                                                        "column": 19
+                                                    }
+                                                },
+                                                "argument": {
+                                                    "type": "NumericLiteral",
+                                                    "start": 64,
+                                                    "end": 65,
+                                                    "loc": {
+                                                        "start": {
+                                                            "line": 4,
+                                                            "column": 18
+                                                        },
+                                                        "end": {
+                                                            "line": 4,
+                                                            "column": 19
+                                                        }
+                                                    },
+                                                    "extra": {
+                                                        "rawValue": 6,
+                                                        "raw": "6"
+                                                    },
+                                                    "value": 6
+                                                }
+                                            }
+                                        ],
+                                        "directives": []
+                                    }
+                                },
+                                {
+                                    "type": "ObjectProperty",
+                                    "start": 70,
+                                    "end": 77,
+                                    "loc": {
+                                        "start": {
+                                            "line": 5,
+                                            "column": 2
                                         },
-                                        "value": "buzz"
+                                        "end": {
+                                            "line": 5,
+                                            "column": 9
+                                        }
+                                    },
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
+                                    "key": {
+                                        "type": "Identifier",
+                                        "start": 70,
+                                        "end": 71,
+                                        "loc": {
+                                            "start": {
+                                                "line": 5,
+                                                "column": 2
+                                            },
+                                            "end": {
+                                                "line": 5,
+                                                "column": 3
+                                            },
+                                            "identifierName": "f"
+                                        },
+                                        "name": "f"
+                                    },
+                                    "value": {
+                                        "type": "BooleanLiteral",
+                                        "start": 73,
+                                        "end": 77,
+                                        "loc": {
+                                            "start": {
+                                                "line": 5,
+                                                "column": 5
+                                            },
+                                            "end": {
+                                                "line": 5,
+                                                "column": 9
+                                            }
+                                        },
+                                        "value": true
                                     }
                                 }
                             ]
                         }
                     }
                 ],
-                "kind": "var"
+                "kind": "const"
             }
         ],
         "directives": []
@@ -323,8 +455,8 @@ module.exports = {
     "tokens": [
         {
             "type": {
-                "label": "var",
-                "keyword": "var",
+                "label": "const",
+                "keyword": "const",
                 "beforeExpr": false,
                 "startsExpr": false,
                 "rightAssociative": false,
@@ -335,9 +467,9 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "value": "var",
+            "value": "const",
             "start": 0,
-            "end": 3,
+            "end": 5,
             "loc": {
                 "start": {
                     "line": 1,
@@ -345,7 +477,7 @@ module.exports = {
                 },
                 "end": {
                     "line": 1,
-                    "column": 3
+                    "column": 5
                 }
             }
         },
@@ -361,17 +493,17 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "value": "object",
-            "start": 4,
-            "end": 10,
+            "value": "a",
+            "start": 6,
+            "end": 7,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 4
+                    "column": 6
                 },
                 "end": {
                     "line": 1,
-                    "column": 10
+                    "column": 7
                 }
             }
         },
@@ -389,16 +521,16 @@ module.exports = {
                 "updateContext": null
             },
             "value": "=",
-            "start": 11,
-            "end": 12,
+            "start": 8,
+            "end": 9,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 11
+                    "column": 8
                 },
                 "end": {
                     "line": 1,
-                    "column": 12
+                    "column": 9
                 }
             }
         },
@@ -414,16 +546,16 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "start": 13,
-            "end": 14,
+            "start": 10,
+            "end": 11,
             "loc": {
                 "start": {
                     "line": 1,
-                    "column": 13
+                    "column": 10
                 },
                 "end": {
                     "line": 1,
-                    "column": 14
+                    "column": 11
                 }
             }
         },
@@ -439,9 +571,9 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "value": "a",
-            "start": 17,
-            "end": 18,
+            "value": "b",
+            "start": 14,
+            "end": 15,
             "loc": {
                 "start": {
                     "line": 2,
@@ -466,8 +598,8 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 18,
-            "end": 19,
+            "start": 15,
+            "end": 16,
             "loc": {
                 "start": {
                     "line": 2,
@@ -491,8 +623,8 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "start": 20,
-            "end": 21,
+            "start": 17,
+            "end": 18,
             "loc": {
                 "start": {
                     "line": 2,
@@ -516,17 +648,17 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "value": "a",
-            "start": 22,
-            "end": 23,
+            "value": "c",
+            "start": 18,
+            "end": 19,
             "loc": {
                 "start": {
                     "line": 2,
-                    "column": 7
+                    "column": 6
                 },
                 "end": {
                     "line": 2,
-                    "column": 8
+                    "column": 7
                 }
             }
         },
@@ -543,16 +675,16 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 23,
-            "end": 24,
+            "start": 19,
+            "end": 20,
             "loc": {
                 "start": {
                     "line": 2,
-                    "column": 8
+                    "column": 7
                 },
                 "end": {
                     "line": 2,
-                    "column": 9
+                    "column": 8
                 }
             }
         },
@@ -571,16 +703,16 @@ module.exports = {
                 "updateContext": null
             },
             "value": "true",
-            "start": 25,
-            "end": 29,
+            "start": 21,
+            "end": 25,
             "loc": {
                 "start": {
                     "line": 2,
-                    "column": 10
+                    "column": 9
                 },
                 "end": {
                     "line": 2,
-                    "column": 14
+                    "column": 13
                 }
             }
         },
@@ -596,15 +728,222 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
+            "start": 25,
+            "end": 26,
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 13
+                },
+                "end": {
+                    "line": 2,
+                    "column": 14
+                }
+            }
+        },
+        {
+            "type": {
+                "label": ",",
+                "beforeExpr": true,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null,
+                "updateContext": null
+            },
+            "start": 26,
+            "end": 27,
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 14
+                },
+                "end": {
+                    "line": 2,
+                    "column": 15
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "name",
+                "beforeExpr": false,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "value": "d",
             "start": 30,
             "end": 31,
             "loc": {
                 "start": {
-                    "line": 2,
+                    "line": 3,
+                    "column": 2
+                },
+                "end": {
+                    "line": 3,
+                    "column": 3
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "(",
+                "beforeExpr": true,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 31,
+            "end": 32,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 3
+                },
+                "end": {
+                    "line": 3,
+                    "column": 4
+                }
+            }
+        },
+        {
+            "type": {
+                "label": ")",
+                "beforeExpr": false,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 32,
+            "end": 33,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 4
+                },
+                "end": {
+                    "line": 3,
+                    "column": 5
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "{",
+                "beforeExpr": true,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 34,
+            "end": 35,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 6
+                },
+                "end": {
+                    "line": 3,
+                    "column": 7
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "return",
+                "keyword": "return",
+                "beforeExpr": true,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null,
+                "updateContext": null
+            },
+            "value": "return",
+            "start": 35,
+            "end": 41,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 7
+                },
+                "end": {
+                    "line": 3,
+                    "column": 13
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "num",
+                "beforeExpr": false,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null,
+                "updateContext": null
+            },
+            "value": 4,
+            "start": 42,
+            "end": 43,
+            "loc": {
+                "start": {
+                    "line": 3,
+                    "column": 14
+                },
+                "end": {
+                    "line": 3,
+                    "column": 15
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "}",
+                "beforeExpr": false,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 43,
+            "end": 44,
+            "loc": {
+                "start": {
+                    "line": 3,
                     "column": 15
                 },
                 "end": {
-                    "line": 2,
+                    "line": 3,
                     "column": 16
                 }
             }
@@ -622,15 +961,15 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 31,
-            "end": 32,
+            "start": 44,
+            "end": 45,
             "loc": {
                 "start": {
-                    "line": 2,
+                    "line": 3,
                     "column": 16
                 },
                 "end": {
-                    "line": 2,
+                    "line": 3,
                     "column": 17
                 }
             }
@@ -647,23 +986,125 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "value": "foo",
-            "start": 35,
-            "end": 38,
+            "value": "get",
+            "start": 48,
+            "end": 51,
             "loc": {
                 "start": {
-                    "line": 3,
+                    "line": 4,
                     "column": 2
                 },
                 "end": {
-                    "line": 3,
+                    "line": 4,
                     "column": 5
                 }
             }
         },
         {
             "type": {
-                "label": ":",
+                "label": "name",
+                "beforeExpr": false,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "value": "e",
+            "start": 52,
+            "end": 53,
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 6
+                },
+                "end": {
+                    "line": 4,
+                    "column": 7
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "(",
+                "beforeExpr": true,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 53,
+            "end": 54,
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 7
+                },
+                "end": {
+                    "line": 4,
+                    "column": 8
+                }
+            }
+        },
+        {
+            "type": {
+                "label": ")",
+                "beforeExpr": false,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 54,
+            "end": 55,
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 8
+                },
+                "end": {
+                    "line": 4,
+                    "column": 9
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "{",
+                "beforeExpr": true,
+                "startsExpr": true,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 56,
+            "end": 57,
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 10
+                },
+                "end": {
+                    "line": 4,
+                    "column": 11
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "return",
+                "keyword": "return",
                 "beforeExpr": true,
                 "startsExpr": false,
                 "rightAssociative": false,
@@ -674,22 +1115,23 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 38,
-            "end": 39,
+            "value": "return",
+            "start": 57,
+            "end": 63,
             "loc": {
                 "start": {
-                    "line": 3,
-                    "column": 5
+                    "line": 4,
+                    "column": 11
                 },
                 "end": {
-                    "line": 3,
-                    "column": 6
+                    "line": 4,
+                    "column": 17
                 }
             }
         },
         {
             "type": {
-                "label": "string",
+                "label": "num",
                 "beforeExpr": false,
                 "startsExpr": true,
                 "rightAssociative": false,
@@ -700,17 +1142,42 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "value": "bar",
-            "start": 40,
-            "end": 45,
+            "value": 6,
+            "start": 64,
+            "end": 65,
             "loc": {
                 "start": {
-                    "line": 3,
-                    "column": 7
+                    "line": 4,
+                    "column": 18
                 },
                 "end": {
-                    "line": 3,
-                    "column": 12
+                    "line": 4,
+                    "column": 19
+                }
+            }
+        },
+        {
+            "type": {
+                "label": "}",
+                "beforeExpr": false,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null
+            },
+            "start": 65,
+            "end": 66,
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 19
+                },
+                "end": {
+                    "line": 4,
+                    "column": 20
                 }
             }
         },
@@ -727,16 +1194,16 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 45,
-            "end": 46,
+            "start": 66,
+            "end": 67,
             "loc": {
                 "start": {
-                    "line": 3,
-                    "column": 12
+                    "line": 4,
+                    "column": 20
                 },
                 "end": {
-                    "line": 3,
-                    "column": 13
+                    "line": 4,
+                    "column": 21
                 }
             }
         },
@@ -752,17 +1219,17 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "value": "fizz",
-            "start": 49,
-            "end": 53,
+            "value": "f",
+            "start": 70,
+            "end": 71,
             "loc": {
                 "start": {
-                    "line": 4,
+                    "line": 5,
                     "column": 2
                 },
                 "end": {
-                    "line": 4,
-                    "column": 6
+                    "line": 5,
+                    "column": 3
                 }
             }
         },
@@ -779,22 +1246,23 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 53,
-            "end": 54,
+            "start": 71,
+            "end": 72,
             "loc": {
                 "start": {
-                    "line": 4,
-                    "column": 6
+                    "line": 5,
+                    "column": 3
                 },
                 "end": {
-                    "line": 4,
-                    "column": 7
+                    "line": 5,
+                    "column": 4
                 }
             }
         },
         {
             "type": {
-                "label": "string",
+                "label": "true",
+                "keyword": "true",
                 "beforeExpr": false,
                 "startsExpr": true,
                 "rightAssociative": false,
@@ -805,17 +1273,17 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "value": "buzz",
-            "start": 55,
-            "end": 61,
+            "value": "true",
+            "start": 73,
+            "end": 77,
             "loc": {
                 "start": {
-                    "line": 4,
-                    "column": 8
+                    "line": 5,
+                    "column": 5
                 },
                 "end": {
-                    "line": 4,
-                    "column": 14
+                    "line": 5,
+                    "column": 9
                 }
             }
         },
@@ -831,16 +1299,42 @@ module.exports = {
                 "postfix": false,
                 "binop": null
             },
-            "start": 62,
-            "end": 63,
+            "start": 78,
+            "end": 79,
             "loc": {
                 "start": {
-                    "line": 5,
+                    "line": 6,
                     "column": 0
                 },
                 "end": {
-                    "line": 5,
+                    "line": 6,
                     "column": 1
+                }
+            }
+        },
+        {
+            "type": {
+                "label": ";",
+                "beforeExpr": true,
+                "startsExpr": false,
+                "rightAssociative": false,
+                "isLoop": false,
+                "isAssign": false,
+                "prefix": false,
+                "postfix": false,
+                "binop": null,
+                "updateContext": null
+            },
+            "start": 79,
+            "end": 80,
+            "loc": {
+                "start": {
+                    "line": 6,
+                    "column": 1
+                },
+                "end": {
+                    "line": 6,
+                    "column": 2
                 }
             }
         },
@@ -857,16 +1351,16 @@ module.exports = {
                 "binop": null,
                 "updateContext": null
             },
-            "start": 63,
-            "end": 63,
+            "start": 80,
+            "end": 80,
             "loc": {
                 "start": {
-                    "line": 5,
-                    "column": 1
+                    "line": 6,
+                    "column": 2
                 },
                 "end": {
-                    "line": 5,
-                    "column": 1
+                    "line": 6,
+                    "column": 2
                 }
             }
         }
