@@ -2,7 +2,7 @@
   "name": "PX-EsLint",
   "version": "1.0.0",
   "dependencies": {
-    "babel-eslint": "latest",
+    "babel-eslint": "7.2.3",
     "@babel/core": "latest"
   },
   "scripts": {

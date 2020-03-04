@@ -1,16 +1,8 @@
 "use strict";
-const babylonToEspree = require("babel-eslint/lib/babylon-to-espree");
-const babelTypes = require("@babel/core").types;
-const {
-    parseSync: parse,
-    tokTypes: tt,
-    traverse,
-    loadPartialConfig,
-} = require("@babel/core");
+const babylonToEspree = require("babel-eslint/babylon-to-espree");
 
-module.exports = function(code, ast) {
+module.exports = function(ast, traverse, tt, t, code) {
 
-    convertNodes(code, ast, traverse);
     babylonToEspree(ast, traverse, tt, code);
 
     return ast;
@@ -92,7 +84,6 @@ function convertNodes(code, ast, traverse) {
         "typeParameters",
     ];
 
-    ast.range = [ast.start, ast.end];
     traverse(ast, traverseRules, null, state);
 
     delete babelTypes.VISITOR_KEYS.Property;
