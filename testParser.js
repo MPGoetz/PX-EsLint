@@ -1,4 +1,4 @@
-const babelParser = require('./babelParser');
+const babelParser = require('./babel6Parser');
 const ast = require('./astSource');
 const t = require("babel-types");
 const tt = require("babylon").tokTypes;
@@ -11,3 +11,5 @@ let newAST = babelParser(ast, traverse, tt, t, "const a = {\n" +
     "  f: true\n" +
     "};");
 console.log(JSON.stringify(newAST));
+
+//node -e "var c = { window: {} }; require('vm').runInNewContext(require('fs').readFileSync('build/babel6Parser_bundle.js'), c); console.log(c)"
