@@ -3,12 +3,14 @@ const babylonToEspree = require("babel-eslint/babylon-to-espree");
 
 module.exports = function(ast, traverse, tt, t, code) {
 
+    convertNodes(ast, traverse, t, code);
     babylonToEspree(ast, traverse, tt, code);
 
     return ast;
 };
 
-function convertNodes(code, ast, traverse) {
+// converts necessary nodes from babel6 to babel7
+function convertNodes(ast, traverse, babelTypes, code) {
     const state = { source: code };
     const traverseRules = {
         noScope: true,

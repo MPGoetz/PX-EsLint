@@ -6,32 +6,14 @@ The Babylon-To-Espree-Converter depends on Babel and Babel-eslint. Therefore, ru
     npm install
 ```
 
-For Babel-eslint, `babel/core@>=7.2.0` is required. In Lively4, an older version is currently used (probably `6.26.3`).
+For Babel-eslint, `babel/core@>=7.2.0` is required. In Lively4, an older version is currently used (`6.26.3`).
 In this version you cannot specify the `range` in the parser options. 
-Therefore, we need to add it in the Babel-eslint plugin manually.
-In the file `babel-eslint/lib/babel-to-espree/toAST.js`, starting from line 25,
-```js
-        var astTransformVisitor = {
-          noScope: true,
-          enter(path) {
-            var node = path.node;
-        
-            // private var to track original node type
-            node._babelType = node.type;
-```
-add the following lines:
-```js
-    var astTransformVisitor = {
-      noScope: true,
-      enter(path) {
-        var node = path.node;
-    
-        // private var to track original node type
-        node._babelType = node.type;
-        if (node.end) {
-          node.range = [node.start, node.end];
-        }
-```
+Hence, the linter will through exceptions if you pass an ast without the ranges. 
+Additionally, there have been renamings and some different structures in the ast nodes in the newer babel version.
+
+The `convertNodes` function works as an adapter which maps the ast based on Babel 6 to an ast based on Babel7 which works with ESLint.
+For additional changes, you can extend this function.
+
 
 ## Run the Converter
 In `testParser.js` is an implementation of the `babelParser.js` given. You can run this file to test the converter.
@@ -49,8 +31,8 @@ npm run bundle
 
 ## Upgrading to Babel 7
 The babelTransform which is used at the moment, correctly works with the babel 7 traverse function.
-Therefore the convertNodes function can be omitted and you input the babel 7 traverse as well as babel types 
+Therefore the `convertNodes` function can be omitted and you input the babel 7 traverse as well as babel types 
 the same way it is done for babel 6. 
 
-Furthermore you can check for a newer version of [babel-eslint](https://github.com/babel/babel-eslint/tree/master/lib/babylon-to-espree)
+Furthermore, you can check for a newer version of [babel-eslint](https://github.com/babel/babel-eslint/tree/master/lib/babylon-to-espree)
 (which our ast conversion is based upon) for any possible improvements.
