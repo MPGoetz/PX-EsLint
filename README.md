@@ -46,3 +46,11 @@ To bundle `babelParser.js`, run the following command. The name of the global va
 ```
 npm run bundle
 ```
+
+## Upgrading to Babel 7
+The babelTransform which is used at the moment, correctly works with the babel 7 traverse function.
+Therefore the convertNodes function can be omitted and you input the babel 7 traverse as well as babel types 
+the same way it is done for babel 6. 
+
+Furthermore you can check for a newer version of [babel-eslint](https://github.com/babel/babel-eslint/tree/master/lib/babylon-to-espree)
+(which our ast conversion is based upon) for any possible improvements.
